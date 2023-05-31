@@ -30,6 +30,7 @@ function DeviceData({ backendURL }) {
             .catch(error => alert(error));
     }
     function handleGetHistoricDataClick() {
+        setHistoricDataRsp("Getting Data...");
         const url = `${backendURL}/api/get_historic_data?deviceName=${deviceName}`;
         console.log(`url: ${url}`)
         const headers = new Headers();
