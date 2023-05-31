@@ -10,6 +10,7 @@ function DeviceData({ backendURL }) {
     };
 
     function handleGetDeviceClick() {
+        setGetDeviceRsp("Getting Data...");
         const url = `${backendURL}/api/get_devices`;
         console.log(`url: ${url}`)
         const headers = new Headers();
@@ -20,6 +21,7 @@ function DeviceData({ backendURL }) {
             .catch(error => alert(error));
     }
     function handleGetRealtimeDataClick() {
+        setRealtimeDataRsp("Getting Data...");
         const url = `${backendURL}/api/get_realtime_data?deviceName=${deviceName}`;
         console.log(`url: ${url}`)
         const headers = new Headers();
