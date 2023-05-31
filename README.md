@@ -1,3 +1,19 @@
+# Fall Detection Frontend
+
+## How to Run?
+1. npm start
+
+## Notes
+ - If not running on localhost and using ngrok, browser will need to install cors overriding thing.
+
+<hr/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 # Create React App
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
