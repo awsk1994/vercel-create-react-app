@@ -3,8 +3,7 @@ import BackendURLModule from './BackendURLModule';
 import DeviceData from './DeviceData';
 
 function Dashboard() {
-    const [backendURL, setBackendURL] = useState('');
-
+    const [backendURL, setBackendURL] = useState('http://localhost:3001');
     return (
     <div>
         <h1>Fall Detection System</h1>
