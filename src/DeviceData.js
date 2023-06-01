@@ -11,7 +11,7 @@ function DeviceData({ backendURL }) {
 
     function handleGetDeviceClick() {
         setGetDeviceRsp("Getting Data...");
-        const url = `${backendURL}/api/get_devices`;
+        const url = `${backendURL}/homii/devices`;
         console.log(`url: ${url}`)
         const headers = new Headers();
         headers.append('ngrok-skip-browser-warning', true); // TODO: temp for ngrok purposes
@@ -22,7 +22,7 @@ function DeviceData({ backendURL }) {
     }
     function handleGetRealtimeDataClick() {
         setRealtimeDataRsp("Getting Data...");
-        const url = `${backendURL}/api/get_realtime_data?deviceName=${deviceName}`;
+        const url = `${backendURL}/homii/realtimeData?deviceName=${deviceName}`;
         console.log(`url: ${url}`)
         const headers = new Headers();
         headers.append('ngrok-skip-browser-warning', true);  // TODO: temp for ngrok purposes
@@ -33,7 +33,7 @@ function DeviceData({ backendURL }) {
     }
     function handleGetHistoricDataClick() {
         setHistoricDataRsp("Getting Data...");
-        const url = `${backendURL}/api/get_historic_data?deviceName=${deviceName}`;
+        const url = `${backendURL}/homii/historicData?deviceName=${deviceName}`;
         console.log(`url: ${url}`)
         const headers = new Headers();
         headers.append('ngrok-skip-browser-warning', true);  // TODO: temp for ngrok purposes
